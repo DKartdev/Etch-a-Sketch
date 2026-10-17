@@ -4,20 +4,9 @@ const inputNumber = document.querySelector("#input");
 
 const resizeBtn = document.querySelector("#resize-btn");
 
-
-
 const restartbutton = document.querySelector("#restart");
 
 let numberOfDivs = 16;
-
-
-
-// resizeBtn.addEventListener("click", () => {
-//   numberOfDivs = Number(inputNumber.value);
-//   createDivs(numberOfDivs);
-// });
-
-
 
 function createDivs(numberOfDivs) {
   for (let j = 1; j <= numberOfDivs; j++) {
@@ -33,12 +22,8 @@ function createDivs(numberOfDivs) {
   }
 }
 
-
-
 createDivs(numberOfDivs);
 const boxes = document.querySelectorAll(".box");
-
-
 
 boxes.forEach((box) => {
   box.addEventListener("mouseenter", () => {
@@ -46,29 +31,17 @@ boxes.forEach((box) => {
   });
 });
 
-
 resizeBtn.addEventListener("click", () => {
-
-
-
   numberOfDivs = Number(inputNumber.value);
   createDivs(numberOfDivs);
   const boxes = document.querySelectorAll(".box");
 
-
-
-boxes.forEach((box) => {
-  box.addEventListener("mouseenter", () => {
-    box.classList.add("active");
+  boxes.forEach((box) => {
+    box.addEventListener("mouseenter", () => {
+      box.classList.add("active");
+    });
   });
 });
-
-
-
-
-});
-
-
 
 restartbutton.addEventListener("click", () => {
   location.reload();

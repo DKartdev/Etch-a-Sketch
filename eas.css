@@ -1,9 +1,9 @@
-.box{
-    background-color: brown;
-    width: 20px;
-    height: 20px;
-    
+*{
+    background-color: darkorange;
 }
+   
+    
+
 .box:hover {
   background-color: white;
 }
@@ -13,20 +13,90 @@
 }
 
 
-
+#input{
+    display: flex;
+    gap: 20px;
+}
 
 body{
     display: flex;
-   /* flex-wrap: wrap; */
+    align-items: center;
+   flex-direction: column;
+    
      
-     width: 2000px;
-     height: 2000px;
+    
 }
 
-#container{
- justify-content: center;
-    
-    display: flex;
-   flex-wrap: wrap;
-    
+button{
+    width: 150px;
+    height: 40px;
+    background-color: rgb(247, 212, 115);
+    font-weight: 600;
+    font-size: large;
 }
+
+
+#container{
+ 
+    width: 960px;
+    height: 960px;
+    border: solid black 5px;
+   display: flex;
+    
+     
+}
+
+ .divs-small-box{
+
+display: flex;
+    border: solid rgb(0, 0, 0) 2px;
+    
+   flex-direction: column;
+      
+     flex: 1 1 auto;
+ 
+
+
+ }
+
+
+
+
+ .box{
+    border: solid rgb(0, 0, 0) 2px;
+     background-color: brown;
+         
+     flex: 1 1 auto;
+     
+     height: 20px;
+     
+     
+ } 
+
+
+ #button-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    gap: 50px;
+    
+ }
+
+ 
+ div h1{
+    margin-top: 120px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+

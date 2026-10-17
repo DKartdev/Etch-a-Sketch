@@ -6,7 +6,7 @@ const resizeBtn = document.querySelector("#resize-btn");
 
 const restartbutton = document.querySelector("#restart");
 
-let numberOfDivs = 16;
+let numberOfDivs = 48;
 
 function createDivs(numberOfDivs) {
   for (let j = 1; j <= numberOfDivs; j++) {
@@ -23,6 +23,8 @@ function createDivs(numberOfDivs) {
 }
 
 createDivs(numberOfDivs);
+
+
 const boxes = document.querySelectorAll(".box");
 
 boxes.forEach((box) => {
@@ -31,9 +33,13 @@ boxes.forEach((box) => {
   });
 });
 
+
+
 resizeBtn.addEventListener("click", () => {
+
+  container.innerHTML = " "
   numberOfDivs = Number(inputNumber.value);
-  createDivs(numberOfDivs);
+    createDivs(numberOfDivs);
   const boxes = document.querySelectorAll(".box");
 
   boxes.forEach((box) => {

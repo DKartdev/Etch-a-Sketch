@@ -48,9 +48,9 @@ button {
 }
 
 .box {
-  border: solid rgb(0, 0, 0) 2px;
-  background-color: brown;
-
+  border: solid rgb(0, 0, 0) 1px;
+  /* background-color: brown; */
+background-color: rgb(247, 150, 4);
   flex: 1 1 auto;
 
   height: 20px;

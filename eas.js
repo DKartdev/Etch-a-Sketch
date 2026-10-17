@@ -6,6 +6,8 @@ const resizeBtn = document.querySelector("#resize-btn");
 
 const restartbutton = document.querySelector("#restart");
 
+const colorBtn = document.querySelector("#color-btn")
+
 let numberOfDivs = 48;
 
 function createDivs(numberOfDivs) {
@@ -52,3 +54,11 @@ resizeBtn.addEventListener("click", () => {
 restartbutton.addEventListener("click", () => {
   location.reload();
 });
+
+const color = document.querySelector(".box")
+const activeColor = document.querySelector(".box.active")
+
+colorBtn.addEventListener("click", () => {
+activeColor.setAttribute("style", "background: red;");
+  color.setAttribute("style", "background: red;");
+})
